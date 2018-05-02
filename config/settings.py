@@ -5,6 +5,13 @@ import logging
 # 日志配置文件
 from copy import deepcopy
 
+# 此处填写APIKEY
+ACCESS_KEY = " "
+SECRET_KEY = " "
+
+# 用户ID(火币网个人中心可看)
+ACCOUNT_ID = None
+
 _filename = None
 _format = "%(asctime)-15s [%(levelname)s] [%(name)s] %(message)s"
 _datefmt = "%Y/%m/%d %H:%M:%S"
@@ -104,3 +111,7 @@ DATABASE_SERVER_PASSWORD = None
 MAIL_ACCOUNT = None
 MAIL_AUTH_CODE = None
 MAIL_RECEIPIENTS = []
+
+# API 请求地址
+MARKET_URL = "https://api.huobi.pro"
+TRADE_URL = "https://api.huobi.pro"
